@@ -20,7 +20,6 @@ public class exemplo {
             System.out.println("Deseja repetir(s/n) ");
             resp = sc.next().charAt(0);
         }
-
         sc.close();
     }
 }
