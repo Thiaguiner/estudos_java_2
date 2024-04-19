@@ -1,7 +1,5 @@
 package application_2;
 
-import Rectangle.Retangle;
-
 import java.util.Scanner;
 
 public class Program_Retangle {

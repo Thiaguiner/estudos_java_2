@@ -1,4 +1,4 @@
-package entities_2;
+package application;
 
 public class Product {
     public String name;
