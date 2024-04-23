@@ -16,7 +16,8 @@ public class Account {
         this.holder = holder;
         deposit(initialDeposit);
     }
-//getters e setters
+
+    //getters e setters
     public int getNumber() {
         return number;
     }//so tem get pois o numero da conta nao pode ser alterado
@@ -28,20 +29,24 @@ public class Account {
     public void setHolder(String holder) {
         this.holder = holder;
     }
-//o balance so tem get pois o saldo so pode ser alterado por meio de saque ou deposito
+
+    //o balance so tem get pois o saldo so pode ser alterado por meio de saque ou deposito
     public double getBalance() {
         return balance;
     }
-    public void deposit(double amount){
+
+    public void deposit(double amount) {
         balance += amount;
     }
-    public void withdraw(double amount){
+
+    public void withdraw(double amount) {
         balance -= amount + 5;
     }
-    public String toString(){
+
+    public String toString() {
         return "Account "
                 + number
-                +", Holder: "
+                + ", Holder: "
                 + holder
                 + ", Balance: $ "
                 + String.format("%.2f", balance);
