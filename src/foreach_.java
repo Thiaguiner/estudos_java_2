@@ -7,6 +7,7 @@ public class foreach_ {
         }
 
         System.out.println("---------------");
+        System.out.println("---------------");
 
         for (String apelido : vect) {
             System.out.println(apelido);
