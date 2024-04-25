@@ -25,10 +25,10 @@ public class Program {
             System.out.print("Salary: ");
             double salary = sc.nextDouble();
 
-            Employee emp = new Employee(id, name, salary);
+            Employee emp = new Employee(id, name, salary);//criando um funcionário, construtor com argumentos
 
-            list.add(emp);
-            //lendo dados do funcionário.
+            list.add(emp);//adicionando o elemento na lista
+
         }
 
 
