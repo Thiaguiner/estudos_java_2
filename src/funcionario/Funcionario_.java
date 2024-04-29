@@ -36,7 +36,8 @@ public class Funcionario_ {
 
     public void setSalary(double salary) {
         this.salary = salary;
-    }
+    }git status
+
     public double increaseSalary(double percentage){
         return salary += salary * percentage / 100;
     }
