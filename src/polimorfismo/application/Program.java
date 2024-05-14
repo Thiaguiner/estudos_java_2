@@ -17,7 +17,7 @@ public class Program {
         int N = sc.nextInt();
 
         for (int i = 0; i < N; i++) {
-            System.out.println("Employee #" + (i+1) + " data:");
+            System.out.println("Employee #" + (i + 1) + " data:");
             System.out.print("Outsorced (y/n)? ");
             char ch = sc.next().charAt(0);
             System.out.print("Name: ");
@@ -28,12 +28,13 @@ public class Program {
             System.out.println("Value per hour: ");
             double valuePerHours = sc.nextDouble();
 
-            if(ch == 'y'){
+            if (ch == 'y') {
+
                 System.out.print("Additional charge: ");
                 double additionalCharge = sc.nextDouble();
-                list.add(new OutsourceEmployee(name, hours, valuePerHours, additionalCharge));;
-            }
-            else{
+                list.add(new OutsourceEmployee(name, hours, valuePerHours, additionalCharge));
+                ;
+            } else {
                 list.add(new Employee(name, hours, valuePerHours));
             }
         }

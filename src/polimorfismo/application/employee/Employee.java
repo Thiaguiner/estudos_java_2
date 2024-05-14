@@ -6,7 +6,6 @@ public class Employee {
     private Double valuePerHour;
 
     public Employee() {
-
     }
 
     public Employee(String name, Integer hours, Double valuePerHour) {
