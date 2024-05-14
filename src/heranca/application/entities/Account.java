@@ -35,10 +35,11 @@ public class Account {
     }
 //tirei o setBalance pois não posso mudar o saldo da conta
 
-    public void withdraw(double amount){
-        balance -= amount;
+    public void withdraw(double amount) {
+        balance -= amount + 5.0;
     }
-    public void deposit(double amount){
+
+    public void deposit(double amount) {
         balance += amount;
     }
 
