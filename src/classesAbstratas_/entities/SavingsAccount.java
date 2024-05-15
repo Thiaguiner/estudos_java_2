@@ -1,5 +1,6 @@
 package classesAbstratas_.entities;
 
+
 public class SavingsAccount extends Account {
     private Double interestRate;
 

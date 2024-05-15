@@ -34,7 +34,6 @@ public abstract class Account {
         return balance;
     }
 //tirei o setBalance pois não posso mudar o saldo da conta
-
     public void withdraw(double amount) {
         balance -= amount + 5.0;
     }
