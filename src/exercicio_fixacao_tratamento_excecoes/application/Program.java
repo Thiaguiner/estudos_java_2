@@ -1,6 +1,7 @@
 package exercicio_fixacao_tratamento_excecoes.application;
 
 import exercicio_fixacao_tratamento_excecoes.entities.Account;
+import exercicio_fixacao_tratamento_excecoes.exceptions.BusinessException;
 
 import java.util.Scanner;
 
@@ -23,12 +24,12 @@ public class Program {
         System.out.println();
         System.out.print("Informe uma quantia para saque: ");
         double amount = sc.nextDouble();
-        String error = acc.validateWithdraw(amount);
-        if (error != null) {
-            System.out.println(error);
-        } else {
+
+        try {
             acc.withdraw(amount);
             System.out.println("Novo saldo: " + acc.getBalance());
+        } catch (BusinessException e) {
+            System.out.println(e.getMessage());
         }
 
         sc.close();
