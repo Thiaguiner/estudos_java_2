@@ -21,7 +21,7 @@ public class Program {
         int N = sc.nextInt();
 
         for (int i = 0; i < N; i++) {
-            System.out.print("Product " + (i + 1) + " data:");
+            System.out.print("Invoice " + (i + 1) + " data:");
             System.out.print("Common, used or imported (c/u/i)? ");
             char ch = sc.next().charAt(0);
             System.out.print("Name: ");

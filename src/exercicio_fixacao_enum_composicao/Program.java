@@ -35,7 +35,7 @@ public class Program {
             System.out.print("Name: ");
             sc.nextLine();
             String productName = sc.nextLine();
-            System.out.print("Product price: ");
+            System.out.print("Invoice price: ");
             double productPrice = sc.nextDouble();
             System.out.print("Quantity: ");
             int quantity = sc.nextInt();

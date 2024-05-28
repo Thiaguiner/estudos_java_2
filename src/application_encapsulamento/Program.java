@@ -26,7 +26,7 @@ public class Program {
 
         System.out.println();
 
-        System.out.println("Product data: " + product);//imprimindo o resultado
+        System.out.println("Invoice data: " + product);//imprimindo o resultado
 
         //perguntando a quantidade de produtos para adicionar ao estoque
         System.out.println();
