@@ -3,6 +3,7 @@ package exercicio_interface.application;
 import exercicio_interface.entities.Contract;
 import exercicio_interface.entities.Installment;
 import exercicio_interface.services.ContractService;
+import exercicio_interface.services.PaypalService;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -27,7 +28,7 @@ public class Program {
         System.out.println("Entre com o numero de parcelas: ");
         int n = sc.nextInt();
 
-        ContractService contractService = new ContractService(null);
+        ContractService contractService = new ContractService(new PaypalService());
 
         contractService.processContract(contract, n);
 
