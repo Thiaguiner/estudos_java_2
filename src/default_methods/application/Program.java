@@ -18,7 +18,7 @@ public class Program {
 //        BrazilInterestService bis = new BrazilInterestService(2.0);
 //        UsaInterestService bis = new UsaInterestService(1.0);
 
-        InterestService is = new UsaInterestService(1.0);
+        InterestService is = new BrazilInterestService();
         double payment = is.payment(amount, months);
 
         System.out.println("Payment after " + months + "months: ");

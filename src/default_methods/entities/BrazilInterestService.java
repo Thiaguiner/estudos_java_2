@@ -1,12 +1,10 @@
 package default_methods.entities;
 
-import java.security.InvalidParameterException;
-
 public class BrazilInterestService implements InterestService {
 
-    private double interestRate;
+    private double interestRate = 2.0;
 
-    public BrazilInterestService(double interestRate) {
+    public BrazilInterestService() {
         this.interestRate = interestRate;
     }
 
