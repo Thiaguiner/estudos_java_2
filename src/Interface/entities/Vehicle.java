@@ -1,8 +1,20 @@
 package Interface.entities;
 
 public class Vehicle {
-    private String car;
+    private String model;
 
-    public Vehicle(String carModel) {
+    public Vehicle(){
+
+    }
+    public Vehicle(String model) {
+        this.model = model;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
     }
 }
