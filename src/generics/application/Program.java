@@ -9,7 +9,7 @@ public class Program {
 
         Scanner sc = new Scanner(System.in);
 
-        PrintService<String> ps = new PrintService<>();
+        PrintService<String> ps = new PrintService<>();//ao definir o tipo o cod ja se adapta
 
         System.out.print("How many values? ");
         int n = sc.nextInt();
@@ -20,8 +20,7 @@ public class Program {
             ps.addValue(value);
         }
         ps.print();
-        String x = ps.first();
-        System.out.println("First: " + x);
+        System.out.println("First: " + ps.first());
 
         sc.close();
     }
