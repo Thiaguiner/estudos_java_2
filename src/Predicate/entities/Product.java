@@ -1,12 +1,10 @@
-package Ex_comparator.entities;
+package Predicate.entities;
+
+import java.util.Objects;
 
 public class Product {
     private String name;
     private Double price;
-
-    public Product() {
-
-    }
 
     public Product(String name, Double price) {
         this.name = name;
@@ -28,6 +26,16 @@ public class Product {
     public void setPrice(Double price) {
         this.price = price;
     }
+
+    public static boolean staticProductPredicate(Product p) {
+        return p.getPrice() >= 100;
+    }
+
+    public boolean nonStaticProductPredicate() {
+        return price >= 100;
+    }
+
+
 
     @Override
     public String toString() {

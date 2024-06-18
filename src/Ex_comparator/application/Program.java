@@ -1,8 +1,9 @@
-package Ex_comparator;
+package Ex_comparator.application;
 
 import Ex_comparator.entities.Product;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class Program {
@@ -14,9 +15,13 @@ public class Program {
         list.add(new Product("Notebook", 1200.0));
         list.add(new Product("Tablet", 450.0));
 
-        list.sort( );
+        //function lambda, quit curt solution
+        Comparator<Product> comp = (p1, p2) ->
+                p1.getName().toUpperCase().compareTo(p2.getName().toUpperCase());
 
-        for (Product p : list){
+        list.sort(comp);
+
+        for (Product p : list) {
             System.out.println(p);
         }
     }

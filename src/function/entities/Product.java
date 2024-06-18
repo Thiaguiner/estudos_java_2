@@ -1,12 +1,8 @@
-package Ex_comparator.entities;
+package function.entities;
 
 public class Product {
     private String name;
     private Double price;
-
-    public Product() {
-
-    }
 
     public Product(String name, Double price) {
         this.name = name;
@@ -29,6 +25,14 @@ public class Product {
         this.price = price;
     }
 
+    public static String staticUpperCaseName(Product product){
+        return product.getName().toUpperCase();
+    }
+
+    public String nonStaticUpperCaseName(){
+        return name.toUpperCase();
+    }
+
     @Override
     public String toString() {
         return "Product{" +
@@ -37,3 +41,5 @@ public class Product {
                 '}';
     }
 }
+
+

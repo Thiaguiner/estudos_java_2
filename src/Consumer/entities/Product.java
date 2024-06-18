@@ -1,12 +1,10 @@
-package Ex_comparator.entities;
+package Consumer.entities;
+
+import java.util.Objects;
 
 public class Product {
     private String name;
     private Double price;
-
-    public Product() {
-
-    }
 
     public Product(String name, Double price) {
         this.name = name;
@@ -27,6 +25,9 @@ public class Product {
 
     public void setPrice(Double price) {
         this.price = price;
+    }
+    public void nonStaticPriceUpdate(){
+        setPrice(getPrice() *1.1);
     }
 
     @Override
