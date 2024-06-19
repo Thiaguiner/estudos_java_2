@@ -18,7 +18,7 @@ public class Program {
         Stream<Integer> st3 = Stream.iterate(0, x -> x + 2);//funçao de iteracao
         System.out.println(Arrays.toString(st3.limit(10).toArray()));
 
-       
+
 
 
     }
