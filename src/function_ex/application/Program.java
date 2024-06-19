@@ -19,7 +19,7 @@ public class Program {
 
         ProductService ps = new ProductService();
 
-        double sum = ps.filteredSum(list, p -> p.getPrice() < 100);
+        double sum = ps.filteredSum(list, p -> p.getPrice() < 100   );
         System.out.println(sum);
 
     }
